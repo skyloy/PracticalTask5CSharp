@@ -35,6 +35,14 @@ int temp = 0;
             }
         }
     }
+    for(int i = 0; i < array.Length; i++)
+    {
+        Console.Write($"{array[i]} " );
+    }
+    Console.WriteLine();
+    int size = array.Length;
+    int res = array[size-1] - array[0];
+    Console.WriteLine($"Difference between maximum and minimum array value is {res}");
 }
 Console.WriteLine ("Enter min of array val:");
 int min = Convert.ToInt32(Console.ReadLine());
@@ -45,4 +53,3 @@ int size = Convert.ToInt32(Console.ReadLine());
 int [] newArray = FillArr(min, max, size);
 ShowArray(newArray);
 MaxToMin(newArray);
-ShowArray(newArray);
